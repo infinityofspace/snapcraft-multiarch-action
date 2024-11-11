@@ -118,7 +118,7 @@ export class SnapcraftBuilder {
     }
 
     let command = 'docker'
-    let containerImage = `diddledani/snapcraft:${base}`
+    let containerImage = `ghcr.io/infinityofspace/snapcraft:${base}`
     if (this.usePodman) {
       command = 'sudo podman'
       containerImage = `docker.io/${containerImage}`
